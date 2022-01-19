@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+
+  <!-- font family Link -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+
+  <!-- bootstrap linking -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- icon link -->
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  
+  <!-- external javascript Link -->
+  <script src="common/controller.js"></script>
+
+  <!-- external css link -->
+  <link rel="stylesheet" href="common/style.css" type="text/css">
+
+</head>
+
+<body style="background-color: rgb(255, 245, 242);">
+  <div>
+    <section class="vh-100 mh-100">
+      <div class="container-fluid h-custom">
+        <div style="padding-top:2rem;padding-bottom: 2rem;">
+          
+          <div class="row d-flex justify-content-center align-items-center h-100 mh-100 min-vh-100">
+            <div class="col-10  col-sm-10 col-md-9 col-lg-6 col-xl-5  ">
+              <!-- ======= Header Section ======= -->
+              <div>
+                <div style="font-size: 2rem;" class="top-buttom-mar-2">
+                  <span><b>UPSC</b></span> PATHSHALA
+                </div>
+                <div style="font-size: 2rem;" class="top-buttom-mar-2">
+                  <span> <b>Best Online Coaching for UPSC Preparation</b></span>
+                </div>
+                
+                <div class="top-buttom-mar-2 tab">
+                  <div style="background-color: rgba(15, 17, 32, 0.748); padding: 8px;">
+                    <div class="img-body">
+                      <div style="background-color: rgba(15, 17, 32, 0.748);">
+                        <div class="image-continer">
+                          <p style="color: white;font-size: 1.5rem; ">Thousands of students from all over India trust
+                            UPSC Pathashala for IAS preparation.Now, it’s <b>your</b> chance to clear UPSC!
+                          </p>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <!-- End Header Section -->
+            </div>
+            <div class="col-10  col-sm-10 col-md-9 col-lg-6 col-xl-4 offset-xl-1 ">
+              <!-- ======= From Section ======= -->
+              <div class="box .box-shadow">
+                <div class="box-head">
+                  <h2 class="box-header-text">Book a Free Demo Class</h2>
+                  <h5 class="box-sub-header-text">Limited Seats only !</h5>
+                </div>
+                <div class="box-body">
+                  <form id="signup-form">
+                    <!-- Mobile Number -->
+                    <div class="form-outline mb-4">
+                      <div class="custom-from-group">
+                        <div id="IdMobilediv"  class="from-input-c">
+                          <label style="display: inline;">+91 - </label>
+                          <input id="IdMobile" type="number" class="From-Input-Mobile" style="display: inline;" placeholder="Enter Mobile Number" />
+                        </div>
+                        <label id="IdMobileLabel" class="form-label form-label-c">Mobile Number</label>
+                      </div>
+                      <label id="IdMobileLabelErr" class="form-label hideElement Error">Please enter a valid mobile number</label>
+                    </div>
+
+                    <!-- Name -->
+                    <div class="form-outline mb-4">
+                      <div class="custom-from-group">
+                        <input type="text" id="IdName" class=" from-input-c" placeholder="Enter Full Name" />
+                        <label id="IdNameLabel" class="form-label-c">Full Name</label>
+                      </div>
+                      <label id="IdNameLabelErr" class="form-label hideElement Error">Please enter a valid mobile number</label>
+
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-outline mb-4">
+                      <div class="custom-from-group">
+                        <input type="email" id="IdEmail" class="from-input-c" placeholder="Enter E-mail ID" />
+                        <label id="IdEmailLabel" class="form-label form-label-c">E-mail ID</label>
+                      </div>
+                      <label id="IdEmailLabelErr" class="form-label hideElement Error">Please enter a valid E-Mail ID</label>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="form-outline mb-4">
+                      <label class="form-label">What describes you best?</label>
+                      <!-- <input list="browsers" name="browser" id="browser" class="from-input-c">
+                          <datalist id="browsers">
+                            <option value="Edge">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                          </datalist> -->
+                      <select name="cars" id="cars" id="IdDescribe" class=" from-input-c">
+                        <option value="Null" selected disabled hidden style="color: red">Select Option</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                    </div>
+
+                    <div class="text-center text-lg-start mt-4 pt-2 ">
+                      <button id="IdSubmit" onclick="test()" type="button" class="btn custom-btn btn-lg" disabled>Submit</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="box-footer">
+                  <span>By clicking 'Submit' button, you explicitly solicit a call & email from uFaber</span>
+                </div>
+              </div>
+              <!-- End Header Section -->
+            </div>
+
+            <!-- **** Enable on Mobile View ***** -->
+            <div class="col-10  col-sm-10 col-md-10 col-lg-6 col-xl-4 offset-xl-1">
+              <div class="top-buttom-mar-2 mob">
+                <div style="background-color: rgba(15, 17, 32, 0.748); padding: 8px;">
+                  <div class="img-body">
+                    <div style="background-color: rgba(15, 17, 32, 0.748);">
+                      <div class="image-continer">
+                        <p style="color: white; ">Thousands of students from all over India trust
+                          UPSC Pathashala for IAS preparation.Now, it’s <b>your</b> chance to clear UPSC!
+                        </p>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+                <footer class="c-footer">2020 © uFaber, All rights reserved uFaber Edutech Pvt. Ltd.</footer>
+              </div>
+            </div>
+            <!-- End Enable on Mobile View -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
